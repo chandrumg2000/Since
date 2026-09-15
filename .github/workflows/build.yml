@@ -33,7 +33,7 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGN_ENTITLEMENTS="" \
-            DEVELOPMENT_TEAM=""
+            DEVELOPMENT_TEAM="" > xcodebuild.log 2>&1 || (echo "=== BUILD FAILED. LOG OUTPUT: ==="; cat xcodebuild.log | grep -E "(error:|fatal error:|BUILD FAILED)" -B 2 -A 5 || tail -n 150 xcodebuild.log; exit 1)
 
       - name: Package IPA
         run: |
