@@ -33,7 +33,16 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGNING_ALLOWED=YES \
             AD_HOC_CODE_SIGNING_ALLOWED=YES \
-            CODE_SIGN_ENTITLEMENTS=""
+            CODE_SIGN_ENTITLEMENTS="" > xcodebuild.log 2>&1 || true
+          
+          echo "=== SEARCHING FOR ERRORS IN BUILD LOG ==="
+          grep -i "error:" xcodebuild.log || true
+          
+          if [ ! -d "build/Build/Products/Release-iphoneos/Since.app" ]; then
+            echo "=== LAST 80 LINES OF XCODEBUILD LOG ==="
+            tail -n 80 xcodebuild.log
+            exit 1
+          fi
 
       - name: Package IPA
         run: |
@@ -48,3 +57,11 @@ jobs:
           name: Since-iOS-App
           path: Since.ipa
           retention-days: 14
+
+      - name: Upload Build Log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcodebuild-log
+          path: xcodebuild.log
+          retention-days: 7
