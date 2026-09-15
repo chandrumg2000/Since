@@ -78,11 +78,11 @@ public struct MarkActivityDoneIntent: AppIntent {
         )
         
         guard let item = (try? context.fetch(descriptor))?.first else {
-            return .result(dialog: "Could not find \(activity.name) in Since.")
+            return .result(dialog: IntentDialog(stringLiteral: "Could not find \(activity.name) in Since."))
         }
         
         ItemService.shared.markDone(item: item, context: context)
-        return .result(dialog: "Marked \(item.name) as done.")
+        return .result(dialog: IntentDialog(stringLiteral: "Marked \(item.name) as done."))
     }
 }
 
@@ -110,10 +110,10 @@ public struct WhenDidILastIntent: AppIntent {
         )
         
         guard let item = (try? context.fetch(descriptor))?.first else {
-            return .result(dialog: "Could not find \(activity.name) in Since.")
+            return .result(dialog: IntentDialog(stringLiteral: "Could not find \(activity.name) in Since."))
         }
         
         let elapsed = DateCalculationService.timeElapsedString(from: item.lastCompletedAt)
-        return .result(dialog: "You last did \(item.name) \(elapsed).")
+        return .result(dialog: IntentDialog(stringLiteral: "You last did \(item.name) \(elapsed)."))
     }
 }
