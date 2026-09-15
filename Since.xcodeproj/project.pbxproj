@@ -52,7 +52,7 @@
 		A200020A2C00000100000001 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100010A2C00000100000001 /* PersistenceService.swift */; };
 		A200020B2C00000100000001 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10001082C00000100000001 /* UserSettings.swift */; };
 		A200020D2C00000100000001 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10001052C00000100000001 /* Category.swift */; };
-		A200020C2C00000100000001 /* SinceWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C20002002C00000100000001 /* SinceWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A200020C2C00000100000001 /* SinceWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C20002002C00000100000001 /* SinceWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, CodeSignOnCopy, ); }; };
 		
 		/* Tests Target Sources */
 		A30003012C00000100000001 /* DateCalculationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30003012C00000100000001 /* DateCalculationServiceTests.swift */; };
