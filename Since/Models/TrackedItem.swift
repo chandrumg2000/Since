@@ -80,3 +80,13 @@ public final class TrackedItem: Identifiable {
         history.sorted { $0.completedAt > $1.completedAt }
     }
 }
+
+extension TrackedItem: Hashable {
+    public static func == (lhs: TrackedItem, rhs: TrackedItem) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}

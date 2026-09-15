@@ -24,3 +24,14 @@ public final class CompletionRecord: Identifiable {
         self.item = item
     }
 }
+
+extension CompletionRecord: Hashable {
+    public static func == (lhs: CompletionRecord, rhs: CompletionRecord) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}
+
