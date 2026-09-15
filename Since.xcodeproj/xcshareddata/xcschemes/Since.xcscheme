@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C10001002C00000100000001"
+               BlueprintIdentifier = "100000002C00000100000001"
                BuildableName = "Since.app"
                BlueprintName = "Since"
                ReferencedContainer = "container:Since.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C30003002C00000100000001"
+               BlueprintIdentifier = "300000002C00000100000001"
                BuildableName = "SinceTests.xctest"
                BlueprintName = "SinceTests"
                ReferencedContainer = "container:Since.xcodeproj">
@@ -54,7 +54,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C10001002C00000100000001"
+            BlueprintIdentifier = "100000002C00000100000001"
             BuildableName = "Since.app"
             BlueprintName = "Since"
             ReferencedContainer = "container:Since.xcodeproj">
@@ -71,7 +71,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C10001002C00000100000001"
+            BlueprintIdentifier = "100000002C00000100000001"
             BuildableName = "Since.app"
             BlueprintName = "Since"
             ReferencedContainer = "container:Since.xcodeproj">

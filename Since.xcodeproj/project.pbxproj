@@ -65,14 +65,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 000000012C00000100000001 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C20002002C00000100000001;
+			remoteGlobalIDString = 200000002C00000100000001;
 			remoteInfo = SinceWidgetExtension;
 		};
 		D10000022C00000100000001 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 000000012C00000100000001 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C10001002C00000100000001;
+			remoteGlobalIDString = 100000002C00000100000001;
 			remoteInfo = Since;
 		};
 /* End PBXContainerItemProxy section */
@@ -311,7 +311,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C10001002C00000100000001 /* Since */ = {
+		100000002C00000100000001 /* Since */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = G10000012C00000100000001 /* Build configuration list for PBXNativeTarget "Since" */;
 			buildPhases = (
@@ -330,7 +330,7 @@
 			productReference = C10001002C00000100000001 /* Since.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C20002002C00000100000001 /* SinceWidgetExtension */ = {
+		200000002C00000100000001 /* SinceWidgetExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = G20000012C00000100000001 /* Build configuration list for PBXNativeTarget "SinceWidgetExtension" */;
 			buildPhases = (
@@ -347,7 +347,7 @@
 			productReference = C20002002C00000100000001 /* SinceWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		C30003002C00000100000001 /* SinceTests */ = {
+		300000002C00000100000001 /* SinceTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = G30000012C00000100000001 /* Build configuration list for PBXNativeTarget "SinceTests" */;
 			buildPhases = (
@@ -375,15 +375,15 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					C10001002C00000100000001 = {
+					100000002C00000100000001 = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					C20002002C00000100000001 = {
+					200000002C00000100000001 = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					C30003002C00000100000001 = {
+					300000002C00000100000001 = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = C10001002C00000100000001;
+						TestTargetID = 100000002C00000100000001;
 					};
 				};
 			};
@@ -400,9 +400,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C10001002C00000100000001 /* Since */,
-				C20002002C00000100000001 /* SinceWidgetExtension */,
-				C30003002C00000100000001 /* SinceTests */,
+				100000002C00000100000001 /* Since */,
+				200000002C00000100000001 /* SinceWidgetExtension */,
+				300000002C00000100000001 /* SinceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -504,12 +504,12 @@
 /* Begin PBXTargetDependency section */
 		H10000012C00000100000001 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C20002002C00000100000001 /* SinceWidgetExtension */;
+			target = 200000002C00000100000001 /* SinceWidgetExtension */;
 			targetProxy = D10000012C00000100000001 /* PBXContainerItemProxy */;
 		};
 		H10000022C00000100000001 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C10001002C00000100000001 /* Since */;
+			target = 100000002C00000100000001 /* Since */;
 			targetProxy = D10000022C00000100000001 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C20002002C00000100000001"
+               BlueprintIdentifier = "200000002C00000100000001"
                BuildableName = "SinceWidgetExtension.appex"
                BlueprintName = "SinceWidgetExtension"
                ReferencedContainer = "container:Since.xcodeproj">
